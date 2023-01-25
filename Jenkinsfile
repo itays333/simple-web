@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice name: 'ACTION', choices: ['DEPLOY', 'DESTORY']
+        choice name: 'ACTION', choices: ['DEPLOY', 'DESTROY']
         string name: 'CHART_NAME', defaultValue: 'simple-web'
         string name: 'NAMESPACE', defaultValue: 'itay'
     }
